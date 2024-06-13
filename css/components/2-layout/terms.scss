@@ -1,0 +1,14 @@
+.terms {
+    padding: 40px 0 70px;
+    &__inner {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            color: #3C3C3C;
+            a {
+                color: $primary;
+            }
+        }
+    }
+}

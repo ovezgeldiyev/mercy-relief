@@ -1,0 +1,119 @@
+.news {
+  padding: 40px 0;
+  background: #f8f8f8;
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: $primary;
+  }
+  &__grid {
+    display: flex;
+    margin: 0 -8px;
+    flex-wrap: wrap;
+  }
+  &Item {
+    width: calc(33.3% - 16px);
+    margin: 8px;
+    background: $white;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__foot {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    &__tag {
+      background: $primary;
+      border-radius: 50px;
+      font-size: 12px;
+      line-height: 14px;
+      padding: 2px 7px;
+      color: $white;
+      margin-bottom: 10px;
+      display: inline-block;
+    }
+    h5 {
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #3c3c3c;
+    }
+    p.xsm {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 20px;
+      font-weight: 400;
+      color: #b9b9b9;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: #3c3c3c;
+      font-weight: 600;
+      @include transition;
+      &:hover {
+        color: $primary;
+        span {
+          margin-left: 12px;
+        }
+      }
+      span {
+        width: 8px;
+        @include transition;
+        height: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 4px;
+        position: relative;
+        &::before {
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          border-top: 2px solid $primary;
+          border-right: 2px solid $primary;
+          content: "";
+          -webkit-transition: 0.3s ease;
+          transition: 0.3s ease;
+          transform: translateY(-50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}
+@mixin news-xxxlg-xxxxlg {
+  .news {
+    &Item {
+      padding: 24px;
+    }
+  }
+}
+@mixin news-md-lg {
+  .news {
+    &Item {
+      width: calc(50% - 16px);
+      &:nth-child(n + 5) {
+        display: none;
+      }
+    }
+  }
+}
+@mixin news-xsm-sm {
+  .news {
+    &Item {
+      width: calc(100% - 16px);
+      padding: 30px;
+      &:nth-child(n + 6) {
+        display: none;
+      }
+    }
+  }
+}

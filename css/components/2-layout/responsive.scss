@@ -1,0 +1,277 @@
+// 1450px
+@include xxxxlg-xxxxxlg {
+  // @include hero-xxxxlg-xxxxxlg;
+}
+// 1380px
+@include xxxlg-xxxxlg {
+  @include hero-xxxlg-xxxxlg;
+  @include news-xxxlg-xxxxlg;
+}
+// 1250px
+@include xlg-xxlg-extra {
+  @include hero-xlg-xxlg-extra;
+}
+// 1180px
+@include xlg-xxlg {
+  .auto__container {
+    padding: 0 30px;
+  }
+  .search {
+    &Btn {
+      margin: 0 20px;
+    }
+  }
+  @include header-xlg-xxlg;
+  @include nav-xlg-xxlg;
+  @include hero-xlg-xxlg;
+  @include donation-xlg-xxlg;
+  @include calc-xlg-xxlg;
+
+}
+// 1024px
+@include lg-xlg {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  .search {
+    position: relative;
+    z-index: 2;
+    max-height: unset;
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+    top: unset;
+    left: unset;
+    border-radius: unset;
+    margin-bottom: 40px;
+    padding: 0;
+    &.active {
+      padding: 0;
+    }
+    &Btn {
+     display: none;
+    }
+  }
+  .basket {
+    right: -18px;
+    &Btn {
+      &__icon {
+        width: 28px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+      }
+      &__number {
+        display: none
+      }
+      b {
+        display: none;
+      }
+    }
+  }
+  .main {
+    padding-top: 60px;
+  }
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include hero-lg-xlg;
+  @include donate-lg-xlg;
+
+}
+// 930px
+@include md-lg {
+  .banner {
+    padding: 60px 0;
+    &__inner {
+      &-content {
+        width: calc(53% - 10px);
+      }
+    }
+    .instant {
+      width: 47%;
+      padding: 30px 20px;
+    }
+  }
+  @include hero-md-lg;
+  @include news-md-lg;
+  @include info-md-lg;
+  @include projects-md-lg;
+  @include latest-md-lg;
+  @include calc-md-lg;
+  @include faq-md-lg;
+
+}
+// 750px
+@include sm-md {
+  .auto__container {
+    padding: 0 20px;
+  }
+  .banner {
+    padding: 10px 0 40px 0;
+    &__bg {
+      display: none;
+    }
+    &__inner {
+      flex-direction: column;
+      align-items: flex-start;
+      &-content {
+        width: 100%;
+        max-width: unset;
+        color: $primary;
+        margin-bottom: 30px;
+      }
+    }
+    .quote {
+      color: $primary;
+      span {
+        width: 37px;
+        height: 27px;
+        img {
+            display: none;
+            &.mob {
+              display: block;
+            }
+        }
+      }
+    }
+    .instant {
+      width: 100%;
+      padding: 40px 30px;
+      box-sizing: border-box;
+      &__row {
+        max-width: 320px;
+      }
+    }
+  }
+  .video {
+    min-height: 230px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    &__play {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      top: unset;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      transform: translate(0);
+      b {
+        font-size: 18px;
+        margin: 0;
+      }
+      span {
+        width: 30px;
+        height: 30px;
+        order: 2;
+        margin-left: 30px;
+      }
+    }
+  }
+  @include hero-sm-md;
+  @include donate-sm-md;
+  @include info-sm-md;
+  @include work-sm-md;
+  @include reports-sm-md;
+  @include contact-sm-md;
+  @include donation-sm-md;
+  @include footer-sm-md;
+  @include checkout-sm-md;
+  @include calc-sm-md;
+  @include faq-sm-md;
+
+}
+// 650px
+@include sm-md-extra {
+  .auto__container {
+    &.sm {
+      padding: 0 26px;
+    }
+  }
+  @include hero-sm-md-extra;
+  @include projects-sm-md-extra;
+  @include reports-sm-md-extra;
+  @include latest-sm-md-extra;
+  @include footer-sm-md-extra;
+}
+// 540px
+@include xsm-sm {
+  .overlay {
+    background-color: transparent;
+    box-shadow: unset;
+  }
+  .banner {
+    .instant {
+      padding: 30px 20px;
+    }
+  }
+  .basket {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: unset;
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+    &__inner {
+      width: 100%;
+      max-width: unset;
+      min-width: unset;
+      box-shadow: 0px 5px 8px 0px #00000021;
+
+      &::before {
+        right: 84px;
+      }
+      &-head {
+        padding: 30px 20px 20px;
+      }
+      &-content {
+        padding: 0 20px 60px;
+      }
+    }
+    &__total {
+      padding: 24px 20px;
+    }
+  }
+  .instant {
+    padding: 20px;
+  }
+  .video{
+    &__play {
+      span {
+        margin-left: 20px;
+      }
+      b {
+        font-size: 15px;
+        white-space: normal;
+      }
+    }
+  }
+  @include header-xsm-sm;
+  @include hero-xsm-sm;
+  @include donate-xsm-sm;
+  @include projects-xsm-sm;
+  @include news-xsm-sm;
+  @include team-xsm-sm;
+  @include contact-xsm-sm;
+  @include checkout-xsm-sm;
+
+}
+// 440px
+@include xxsm-xsm {
+  @include hero-xxsm-xsm;
+}
+// 380px
+@include xxxsm-xxsm {
+  .auto__container {
+    &.sm {
+      padding: 0 20px;
+    }
+  }
+  // @include hero-xxxsm-xxsm;
+}

@@ -1,0 +1,171 @@
+.info {
+  padding: 50px 0;
+  &__inner {
+    &-top {
+      margin-bottom: 65px;
+      h2 {
+        margin-bottom: 20px;
+      }
+    }
+    &-items {
+      padding-top: 30px;
+      margin: 0 -10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &-content {
+      width: calc(50% - 10px);
+      max-width: 480px;
+      &.big {
+        width: calc(55% - 10px);
+        max-width: 550px;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      p {
+        margin-bottom: 30px;
+        &:last-child {
+          margin: 0;
+        }
+        &.big {
+          color: $primary;
+        }
+      }
+    }
+    &-image {
+      position: relative;
+      padding-bottom: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include fullImage;
+      }
+      &-wrapper {
+        width: calc(50% - 10px);
+        max-width: 500px;
+      }
+    }
+    .instant {
+      width: calc(45% - 10px);
+      max-width: 410px;
+    }
+  }
+  &Item {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    width: calc(33.3% - 20px);
+    &:hover {
+      opacity: 1;
+      span {
+        background-color: #6ba324;
+      }
+    }
+    span {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: $primary;
+      position: relative;
+      transition: 0.3s ease;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 7px;
+        height: 7px;
+        border-top: 2px solid #f8f8f8;
+        border-right: 2px solid #f8f8f8;
+        content: "";
+        -webkit-transition: 0.3s ease;
+        transition: 0.3s ease;
+        transform: translate(-70%, -50%) rotate(45deg);
+      }
+    }
+    h6 {
+        width: calc(100% - 30px);
+      font-weight: 700;
+      color: #272727;
+    }
+  }
+}
+// 930px
+@mixin info-md-lg {
+  .info {
+    &__inner {
+      &-content {
+        &.big {
+          width: calc(50% - 10px);
+        }
+      }
+      .instant {
+        width: calc(50% - 10px);
+        padding: 20px;
+      }
+    }
+    &Item {
+      width: calc(50% - 20px);
+    }
+  }
+}
+// 750px
+@mixin info-sm-md {
+  .info {
+    padding: 20px 0 30px;
+    &__inner {
+        &-top {
+            margin-bottom: 40px;
+        }
+        &-items {
+            flex-direction: column;
+            margin: 0;
+        }
+      &-row {
+        flex-direction: column;
+        align-items: center;
+      }
+      &-content {
+        width: 100%;
+        max-width: unset;
+        margin-bottom: 30px;
+        &:last-child {
+          margin: 0;
+        }
+        &.big {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+      &-image {
+        &-wrapper {
+          width: 100%;
+          max-width: unset;
+        }
+      }
+      .instant {
+        width: 100%;
+      }
+    }
+    &Item {
+        width: 100%;
+        margin: 0 0 20px 0;
+        &:last-child {
+            margin: 0;
+        }
+      }
+  }
+}

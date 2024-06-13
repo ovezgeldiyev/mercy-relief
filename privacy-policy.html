@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Privacy Policy</title>
+</head>
+
+<body>
+    <!-- header start
+    =========================================== -->
+    <div class="overlay" id="overlay"></div>
+    <header class="header big" id="header">
+        <div class="auto__container">
+            <div class="header__inner">
+                <a href="index.html" class="header__inner-logo">
+                    <img src="./images/logo.svg" alt="" />
+                </a>
+                <div class="header__inner-main">
+                    <nav class="nav " id="menu">
+                        <div class="nav__inner">
+                            <ul class="nav__inner-links">
+                                <div class="search" id="searchContent">
+                                    <form action="" class="search__form">
+                                        <input type="search" placeholder="What can we help you with">
+                                        <button type="submit" class="search__icon">
+                                            <svg>
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                                <li class="drop">
+                                    <div class="nav__inner-link faqBtn" data-faq="#faq-1">Campaigns</div>
+                                    <div class="dropMenu faqEvent" id="faq-1">
+                                        <div class="dropMenu__inner">
+                                            <ul class="dropMenu__list">
+                                                <li>
+                                                    <a href="#">
+                                                        Palestine Emergency
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Morocco Earthquake
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Yemen Water Appeal
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Where Most Needed
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Pay Your Zakat
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Zakat Calculator
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="drop">
+                                    <div class="nav__inner-link faqBtn" data-faq="#faq-2">Get Involved</div>
+                                    <div class="dropMenu faqEvent" id="faq-2">
+                                        <div class="dropMenu__inner">
+                                            <ul class="dropMenu__list">
+                                                <li>
+                                                    <a href="#">
+                                                        Be Our Volunteer
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Fundrasing
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Events
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        News & Blogs
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="drop">
+                                    <div class="nav__inner-link faqBtn" data-faq="#faq-3">About Us</div>
+                                    <div class="dropMenu faqEvent" id="faq-3">
+                                        <div class="dropMenu__inner">
+                                            <ul class="dropMenu__list">
+                                                <li>
+                                                    <a href="#">
+                                                        Who We Are
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        Our Reports
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#" class="nav__inner-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header__inner-buttons">
+                        <div class="basketBtn">
+                            <div class="basketBtn__number">
+                                0
+                            </div>
+                            <div class="basketBtn__icon">
+                                <img src="./images/icons/basket.svg" alt="" />
+                            </div>
+                            <b>
+                                Basket
+                            </b>
+                            <div class="basket">
+                                <div class="basket__inner">
+                                    <div class="basket__inner-head">
+                                        <h5>
+                                            Donation Basket
+                                            <div class="basket__inner-close">
+                                                <span></span>
+                                            </div>
+                                        </h5>
+                                    </div>
+                                    <div class="basket__inner-content">
+                                        <p>
+                                            You have <b>1</b> item in your basket
+                                        </p>
+                                        <div class="basket__inner-row">
+                                            <h6>
+                                                Hunger and Food
+                                            </h6>
+                                            <h5>
+                                                $50
+                                            </h5>
+                                        </div>
+                                        <p class="sm">
+                                            Location: Sudan <br>
+                                            Type: Where Most Needed
+                                        </p>
+                                        <div class="basket__box-remove">
+                                            <svg>
+                                                <use xlink:href="#closeIcon"></use>
+                                            </svg>
+                                            Remove
+                                        </div>
+                                    </div>
+                                    <div class="basket__total">
+                                        <div class="basket__total-title">
+                                            <h5>Total:</h5>
+                                            <h5>$50</h5>
+                                        </div>
+                                        <button type="button" class="button secondary">Checkout</button>
+                                        <button type="button" class="button primary">
+                                            Make Another Donation
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button type="button" class="searchBtn" id="searchBtn">
+                            <svg>
+                                <use xlink:href="#search"></use>
+                            </svg>
+                        </button>
+                        <a href="#" class="button secondary">
+                            Donate Now
+                            <span></span>
+                        </a>
+                        <div class="burger" id="menuBtn">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- header end
+  =========================================== -->
+    <main class="main sm">
+        <!-- terms start
+    =========================================== -->
+        <section class="terms">
+            <div class="auto__container">
+                <div class="terms__inner">
+                    <h2>
+                        Privacy Policy
+                    </h2>
+                    <p>
+                        At Mercy Relief we understand that your decision to support us is what allows us to continue to
+                        be ‘Here for Every Human’ at times of need, as we have been doing for over 25 years. This is why
+                        we believe in being transparent about why we need your personal details when you support us and
+                        how they will be used.
+                        <br> <br>
+                        Full Privacy Policy
+                        <br> <br>
+
+                        Who are we?
+                        <br> <br>
+
+                        Mercy Relief(“We”) are committed to protecting and respecting your privacy. We understand that
+                        your privacy is Important. When you give us your personal details – for example when you give a
+                        donation, sign a petition, sign up to receive email updates, support any of our schemes or
+                        register for any of our events – you may receive follow up information from us directly relevant
+                        to this activity, including how your donation is helping.
+                        <br> <br>
+
+                        This policy (together with our terms of use and any other documents referred to on it) sets out
+                        the basis on which any personal data we collect from you, or that you provide to us, will be
+                        processed by us. Please read the following carefully to understand our views and practices
+                        regarding your personal data and how we will treat it.
+                        <br> <br>
+
+                        For the purposes of GDPR the Data Controller is: Mercy Relief, unit 3, The Bordesley centre,
+                        Stratford Road, B11 1AR
+                        <br> <br>
+
+                        Information we collect from you
+                        <br> <br>
+
+                        We will collect and process the following data about you:
+
+                        <br> <br>
+                        Information you give us.
+                        <br> <br>
+
+                        This is information about you that you give us by filling in forms on our website
+                        www.mercyrelief.org.uk (our website) or by corresponding with us by phone, e-mail or otherwise.
+                        It includes information you provide when you register to use a secure part of our website,
+                        subscribe to any of our updates or newsletters, search for a service, make an enquiry, request
+                        further information, make a donation on our website, engage us to provide assistance or
+                        services, during the course of a legal matter, participate in social media functions on our
+                        website, enter a competition, promotion or survey, register for an event and when you report a
+                        problem with our website. The information you give us may include your name, position, company,
+                        contact details (such as address, e-mail address and phone number, DOB), your personal
+                        preferences, choices and requirements specific to particular requests or services, financial and
+                        credit card information.
+                        <br> <br>
+
+                        Information we collect about you.
+                        <br> <br>
+
+                        With regard to each of your visits to our website we may automatically collect the following
+                        information:
+                        <br> <br>
+
+                        Technical information, including the Internet protocol (IP) address used to connect your
+                        computer to the Internet, your login information, browser type and version, browser plug-in
+                        types and versions, operating system and platform;
+                        <br> <br>
+
+                        Information about your visit, including the full Uniform Resource Locators (URL), clickstream
+                        to, through and from our website (including date and time), products you viewed or searched for’
+                        page response times, download errors, length of visits to certain pages, page interaction
+                        information (such as scrolling, clicks, and mouse-overs), methods used to browse away from the
+                        page and any phone number used to call our client service number.
+                        <br> <br>
+
+                        This is information we receive about you if you use any of the other websites we operate or the
+                        other services we provide. In this case we will have informed you when we collected that data if
+                        we intend to share those data internally and combine it with data collected on this website. We
+                        will also have told you for what purpose we will share and combine your data.
+                        <br> <br>
+
+                        We are working closely with third parties (including, for example, business partners,
+                        accountants, sub-contractors in technical, payment and delivery services, advertising networks,
+                        analytics providers, search information providers).
+                        <br> <br>
+
+                        Cookies
+                        <br> <br>
+
+                        Our website uses cookies to distinguish you from other users of our website. This helps us to
+                        provide you with a good experience when you browse our website and also allows us to improve our
+                        website. For detailed information on the cookies we use and the purposes for which we use them
+                        see our Cookie policy.
+                        <br> <br>
+
+                        Legal grounds for collection and use of your personal information
+                        <br> <br>
+
+                        We will only collect, use and otherwise handle your personal information when:
+                        <br> <br>
+
+                        We have your consent for specified, explicit and legitimate purposes (see the third paragraph of
+                        section 1 above and section 5); and/or
+                        <br> <br>
+
+                        it is necessary for our legitimate interests in connection with operating the website and our
+                        business, in particular:
+                        <br> <br>
+
+                        responding to your queries;
+                        <br> <br>
+
+                        carrying out marketing activities;
+                        <br> <br>
+
+                        providing services and/or information to you;
+                        <br> <br>
+
+                        transmitting personal information between our group companies for internal administrative
+                        purposes;
+                        <br> <br>
+
+                        keeping in touch with you and/or your business;
+                        <br> <br>
+
+                        hosting and maintaining our website;
+                        <br> <br>
+
+                        providing technical support to you;
+                        <br> <br>
+
+                        preventing and detecting fraud and other criminal offences;
+                        <br> <br>
+
+                        ensuring network and information security;
+                        <br> <br>
+
+                        As long as, in each case, these interests are in line with applicable law and your legal rights
+                        and freedoms; and/or
+                        <br> <br>
+
+                        where this is necessary for legal obligations which apply to us; and/or
+                        <br> <br>
+
+                        where this is necessary for the performance of a contract we have with you (for example to
+                        provide goods and/or services to you) or that you have with a third party; and/or
+                        <br> <br>
+
+                        where this is necessary to take steps at your request prior to entering into a contract
+                        <br> <br>
+
+                        Uses made of the information
+                        <br> <br>
+
+                        We use information held about you in the following ways:
+                        <br> <br>
+
+                        Information you give to us. We will use this information:
+                        <br> <br>
+
+                        To fulfil your requests – to carry out our obligations arising from any contracts entered into
+                        between you and us, respond to your queries and to provide you with the information, products
+                        and services that you request from us;
+                        <br> <br>
+
+                        Events
+                        <br> <br>
+
+                        If you register for one of our fundraising events, we will share your name, business name and
+                        professional title with other people that are attending the same event;
+                        <br> <br>
+
+                        if you register for one of our other events, we may share your name with other people that are
+                        attending the same event;
+                        <br> <br>
+
+                        if you register for an event jointly organised with a selected third party, we will share your
+                        name, business name and professional title with the other event organiser for event
+                        communication management;
+                        <br> <br>
+
+                        Marketing and updates –
+                        <br> <br>
+
+                        To provide you with information about other services we offer that are similar to those that you
+                        have already been involved with or enquired about;
+                        <br> <br>
+
+                        Where you have provided us with your contact details, to provide you with information about
+                        goods or services we feel may interest you. This may be by post, telephone or electronic means
+                        (e-mail or SMS).
+                        <br> <br>
+
+                        If you do not want us to use your data in this way, you can opt out. If you opt out of marketing
+                        communications, your visit to and use of the website will not be affected.
+                        <br> <br>
+
+                        Marketing Opt-Out – you are entitled to opt-out of marketing communications at any time and free
+                        of charge by emailing info@mercyrelief.org.uk or on our “Manage Your Preferences” section of our
+                        website or by using the “unsubscribe” option included in any marketing e-mail or other marketing
+                        material received from us.
+                        <br> <br>
+
+                        Changes – to notify you about changes to our service;
+                        <br> <br>
+
+                        Website content presentation – to ensure that content from our website is presented in the most
+                        effective manner for you and for your computer.
+                        <br> <br>
+
+                        We may also use any personal information that you provide to us:
+                        <br> <br>
+
+                        Where legally permitted for specific purposes made clear at the point of collection on
+                        particular pages of our website; and/or
+                        <br> <br>
+
+                        Where we otherwise have legal grounds for collection and use of your personal information as
+                        explained in more detail in clause 4 above.
+                        <br> <br>
+
+                        If you choose not to provide personal information requested by us, we may not be able to provide
+                        you with the information and/or services you have requested or otherwise fulfil the purpose(s)
+                        for which we have asked for the personal information. Aside from this, your visit to the website
+                        will remain unaffected.
+                        <br> <br>
+
+                        Information we collect about you. We will use this information:
+                        <br> <br>
+
+                        To administer our website and for internal operations, including troubleshooting, data analysis,
+                        testing, research, statistical and survey purposes;
+                        <br> <br>
+
+                        To improve our website to ensure that content is presented in the most effective manner for you
+                        and for your computer;
+                        <br> <br>
+
+                        To allow you to participate in interactive features of our service, when you choose to do so; As
+                        part of our efforts to keep our website safe and secure;
+                        <br> <br>
+
+                        To measure or understand the effectiveness of advertising we serve to you and others, and to
+                        deliver relevant advertising to you;
+                        <br> <br>
+
+                        To make suggestions and recommendations to you and other users of our website about goods or
+                        services that may interest you or them.
+                        <br> <br>
+
+                        Information we receive from other sources. We will combine this information with information you
+                        give to us and information we collect about you. We will use this information and the combined
+                        information for the purposes set out above (depending on the types of information we receive),
+                        where those purposes are compatible.
+                        <br> <br>
+
+                        Disclosure of your Information
+                        <br> <br>
+
+                        Some services that we provide require the involvement of third parties. We have carefully
+                        selected these third parties and taken steps to ensure that your personal information is
+                        adequately protected.
+                        <br> <br>
+
+                        You agree that we have the right to share your personal information with the following third
+                        parties:
+                        <br> <br>
+
+                        Google Analytics
+                        <br> <br>
+
+                        This website uses Google Analytics, a web analysis service provided by Google Inc. (“Google”).
+                        Google Analytics works using cookies.
+                        <br> <br>
+
+                        Google Analytics cookies collect your IP address, however because IP anonymisation is used on
+                        this website, your IP address will be shortened (and therefore anonymised) as soon as
+                        technically possible and before it is stored or otherwise used in connection with Google
+                        Analytics.
+                        <br> <br>
+
+                        The anonymisation process takes place within the European Union or the European Economic Area,
+                        except in exceptional cases, where your full IP address may be sent to a Google server in the
+                        USA and shortened there.
+                        <br> <br>
+
+                        We use the information collected by Google Analytics cookies to find out about how visitors use
+                        our website.
+                        <br> <br>
+
+                        The IP address sent by your browser in connection with Google Analytics will not be combined by
+                        Google, with other data.
+                        <br> <br>
+
+                        You can prevent Google Analytics cookies from being stored by setting your browser software
+                        accordingly (see our cookie policy for further information). However, please note that you may
+                        not then be able to make full use of all the website’s functions.
+                        <br> <br>
+
+                        You can also opt-out of Google Analytics by downloading and installing the browser plug-in
+                        available at the following link:
+                        <a href="http://tools.google.com">
+                            http://tools.google.com
+                        </a>
+                        <br> <br>
+
+                        ii) Sharing with our group companies
+                        <br> <br>
+
+                        The personal information you provide on the website is collected by Mercy Relief(UK). However
+                        where you ask or indicate that we should do so (e.g. in an online form) or where we are
+                        otherwise legally permitted to do so in accordance with this privacy policy, we may transfer
+                        your personal information between and to other Mercy Relief entities. Mercy Relief entities are
+                        our subsidiaries or partners acting on our behalf.
+                        <br> <br>
+
+                        When Mercy Relief or any of its subsidiaries or partners intends to use your personal
+                        information for a new purpose, they will let you know about this.
+                        <br> <br>
+
+                        Sharing with our service providers
+                        <br> <br>
+
+                        We may share your personal information with our third party service providers based in the UK or
+                        the European Economic Area (“EEA”) who we engage to process the information that we collect from
+                        you on the website or otherwise, and/or to host and maintain our website, content or services,
+                        on our behalf and in accordance with this privacy policy.
+                        <br> <br>
+
+                        We will let you know if we need to transfer your personal information to any third party service
+                        providers located outside of the EEA.
+                        <br> <br>
+
+                        Where we employ third party companies or individuals to process personal information provided by
+                        us (and not collected by them), they only use this personal information on our behalf and in
+                        line with our instructions and this privacy policy.
+                        <br> <br>
+
+                        Sharing with other selected third parties
+                        <br> <br>
+
+                        We may share your personal information with selected third parties including:
+                        <br> <br>
+
+                        Business partners for the performance of any contract we enter into with you;
+                        <br> <br>
+
+                        Business partners with whom we organise a joint event, for joint or our marketing purposes.
+                        Where we do this for joint events, we do it for the purpose of removing duplicates from our
+                        invitation list and for event communication management. We may do this when we hand over the
+                        organisation of a regular event to another organisation and we or the new organiser will contact
+                        you at that time to let you know. We will never share your confidential matter or enquiry
+                        details with such business partners;
+                        <br> <br>
+
+                        Analytics and search engine providers that assist us in the improvement and optimisation of our
+                        website;
+                        <br> <br>
+
+                        If you are a supplier we may contact credit reference agencies for the purpose of assessing your
+                        credit score where this is a condition of us entering into a contract with you;
+                        <br> <br>
+
+                        Our website offers the possibility to share content on social media channels, e.g., Facebook.
+                        The respective social media provider will directly gather personal information only after you
+                        click on the corresponding sharing button. Please refer to the privacy policy of the social
+                        media providers to learn more about what personal information is collected and used.
+                        <br> <br>
+
+                        We will disclose your personal information to third parties:
+                        <br> <br>
+
+                        In the event that we sell or buy any business or assets, in which case we will disclose your
+                        personal data to the prospective seller or buyer of such business or assets.
+                        <br> <br>
+
+                        If Mercy Relief or substantially all of its assets are acquired by a third party, in which case
+                        personal data held by it about its clients will be one of the transferred assets.
+                        <br> <br>
+
+                        *If we are under a duty to disclose or share your personal data in order to comply with any
+                        legal obligation, or in order to enforce or apply our terms of use or our terms of business and
+                        other agreements; or to protect the rights, property, or safety of Mercy Relief or its
+                        subsidiaries or partner companies (see section 6.ii), our clients, or others. This includes
+                        exchanging information with other companies and organisations, regulators and law enforcement
+                        agencies for the purposes of preventing and detecting fraud, other criminal offence, credit risk
+                        reduction and/or to ensure network and information security.
+                        <br> <br>
+
+                        How long do we store personal Information
+                        <br> <br>
+
+                        Our policy is to retain your personal information for the length of time required for the
+                        specific purpose or purposes for which it was collected. Such purposes are set out in this
+                        privacy policy. This is automatically overridden when we are asked to comply with any legal
+                        obligation.
+                        <br> <br>
+
+                        Where you are a donor, the period your information (including your personal data) will be
+                        retained is set out in our terms and conditions. However, on occasion we may be obliged to store
+                        some data for a longer time, for example, where a longer time period is required by applicable
+                        laws. In this case, we will ensure that your personal data will continue to be treated in
+                        accordance with this privacy policy.
+                        <br> <br>
+
+                        For more information on how long cookies are stored, please refer to our cookie policy.
+                        <br> <br>
+
+                        Where we store your personal data
+                        All information you provide to us is stored on our secure servers. Any payment transactions will
+                        be processed securely by Worldpay, pay safe or caf online. Where we have given you (or where you
+                        have chosen) a password which enables you to access certain parts of our website, you are
+                        responsible for keeping this password confidential. We ask you not to share a password with
+                        anyone.
+                        <br> <br>
+
+                        Unfortunately, the transmission of information via the internet is not completely secure.
+                        Although we will do our best to protect your personal data, we cannot guarantee the security of
+                        your data transmitted to our website; any transmission is at your own risk. Once we have
+                        received your information, we will use strict procedures and security features to try to prevent
+                        unauthorised access.
+                        <br> <br>
+
+                        Confidentiality
+                        <br> <br>
+
+                        We acknowledge that the information you provide may be confidential. We will maintain the
+                        confidentiality of and protect your confidential information in accordance with all applicable
+                        laws and regulations.
+                        <br> <br>
+
+                        Your rights
+                        <br> <br>
+
+                        You have the right to ask us not to process your personal data for marketing purposes. We will
+                        usually inform you (when we collect your data) if we intend to use your data for such purposes.
+                        You can exercise your right to prevent such processing by checking certain boxes on our
+                        leaflets, brochures or letters or by letting us know when we collect your information. You can
+                        also exercise the right at any time by managing your preferences on our website (click here) or
+                        by contacting us at info@mercyrelief.org.uk
+                        <br> <br>
+
+                        Our website may, from time to time, contain links to and from the websites of our partner
+                        networks, advertisers and affiliates. If you follow a link to any of these websites, please note
+                        that these websites have their own privacy policies and that we do not accept any responsibility
+                        or liability for these policies. Please check these policies before you submit any personal data
+                        to these websites.
+                        <br> <br>
+
+                        If you wish to:
+                        <br> <br>
+
+                        Access, confirm, correct, rectify, update, supplement, anonymise, block, restrict or delete your
+                        personal information;
+                        <br> <br>
+
+                        Object to our use of your personal information;
+                        <br> <br>
+
+                        Withdraw your consent;
+                        <br> <br>
+
+                        If you have any questions about our processing of your personal information; or
+                        <br> <br>
+
+                        If you would like to transfer your personal information from us to another person or business,
+                        <br> <br>
+
+                        Please contact us at info@mercyrelief.org.uk
+                        <br> <br>
+
+                        Where you request access to your personal information, the information will be provided in
+                        writing. In order to comply with your request, we may ask you to verify your identity. We will
+                        fulfil your request by sending your copy electronically, unless the request expressly specifies
+                        a different method. For any subsequent access request, we may charge you an administrative fee.
+                        <br> <br>
+
+                        We will provide you with all rights in relation to your personal information to which you are
+                        entitled under applicable law. If you are unhappy with the way that we have handled your
+                        personal information, you can make a complaint to the authority responsible for data protection
+                        in the country that you are based. Contact details are typically available online, or
+                        alternatively you may ask us for assistance at info@mercyrelief.org.uk
+                        <br> <br>
+
+                        Changes to our privacy policy
+                        <br> <br>
+
+                        Any changes we make to our privacy policy in the future will be posted on this page and, where
+                        appropriate, notified to you by e-mail. Please check back frequently to see any updates or
+                        changes to our privacy policy.
+                        <br> <br>
+
+                        Contact
+                        <br> <br>
+
+                        Questions, comments and requests regarding this privacy policy are welcomed and should be
+                        addressed to info@mercyrelief.org.uk
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- terms end
+=========================================== -->
+        <!-- footer start
+    =========================================== -->
+        <footer class="footer">
+            <div class="auto__container">
+                <div class="footer__inner">
+                    <div class="footer__info">
+                        <div class="footer__info-logo">
+                            <img src="images/logo.svg" alt="" />
+                        </div>
+                        <div class="footer__info-socials">
+                            <a href="">
+                                <img src="images/icons/social/facebook.svg" alt="" />
+                            </a>
+                            <a href="">
+                                <img src="images/icons/social/twitter.svg" alt="" />
+                            </a>
+                            <a href="">
+                                <img src="images/icons/social/linkedin.svg" alt="" />
+                            </a>
+                            <a href="">
+                                <img src="images/icons/social/instagram.svg" alt="" />
+                            </a>
+                            <a href="">
+                                <img src="images/icons/social/youtube.svg" alt="" />
+                            </a>
+                        </div>
+                        <div class="footer__info-logo sm">
+                            <img src="images/regulator.svg" alt="" />
+                        </div>
+                        <h5>
+                            <b> Contact Us </b>
+                        </h5>
+                        <p>
+                            Mercy Relief <br />
+                            565 Coventry Rd <br />
+                            Birmingham <br />
+                            B10 0LP <br />
+                            Phone: 0121 493 8909
+                        </p>
+                    </div>
+                    <form action="#" class="footer__form">
+                        <h2>Join our mailing list</h2>
+                        <p>Get updates about our life-saving work around the world.</p>
+                        <div class="input__row">
+                            <div class="input">
+                                <input type="name" placeholder="First Name" />
+                            </div>
+                            <div class="input">
+                                <input type="name" placeholder="Last Name" />
+                            </div>
+                            <div class="input">
+                                <input type="email" placeholder="Email" />
+                            </div>
+                            <div class="input">
+                                <input type="tel" placeholder="Mobile Phone (Optional)" />
+                            </div>
+                        </div>
+                        <div class="check">
+                            <input type="checkbox" />
+                            <label for="">
+                                I am happy to receive updates from email (inc. via social
+                                media) and SMS
+                            </label>
+                        </div>
+                        <button type="submit" class="button primary">
+                            Sign Up <span></span>
+                        </button>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                            diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                            aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                            justo duo dolores et ea rebum. Stet clita kasd gubergren.
+                        </p>
+                    </form>
+                </div>
+                <div class="footer__nav">
+                    <a href="">Sponsor Orphan in Yemen</a>
+                    <a href="">Donate to Bread Factory</a>
+                    <a href="">Water Project</a>
+                    <a href="">Emergency Appeal</a>
+                    <a href="">About</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Cookie Policy</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms & Conditions</a>
+                </div>
+                <div class="footer__copy">
+                    <p>
+                        Mercy Relief is a UK registered charity 1122376. and UK registered
+                        company 1122376. Registered Address: Mercy Relief, 565 Coventry
+                        Road, Birmingham, B10 0LP
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end
+    =========================================== -->
+        <div class="donate">
+            <div class="auto__container">
+                <div class="donate__inner">
+                    <div class="donate__inner-title" id="donateBtn">
+                        <h5>
+                            <b>
+                                Quick
+                            </b>
+                            Donate
+                        </h5>
+                        <span></span>
+
+                    </div>
+                    <div class="donate__inner-row" id="donateContent">
+                        <div class="donate__inner-item">
+                            <div class="select uniq">
+                                <select name="" id="">
+                                    <option value="0" hidden>One-Off Donation</option>
+                                    <option value="1">Lorem ipsum dolor</option>
+                                    <option value="2">Lorem ipsum dolor</option>
+                                    <option value="3">Lorem ipsum dolor sit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="donate__inner-item">
+                            <div class="select uniq">
+                                <select name="" id="">
+                                    <option value="0" hidden>Select Fund</option>
+                                    <option value="1">Lorem ipsum dolor</option>
+                                    <option value="2">Lorem ipsum dolor</option>
+                                    <option value="3">Lorem ipsum dolor sit</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="donate__inner-item">
+                            <div class="input uniq">
+                                <input type="text" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency"
+                                    placeholder="£.00.00" />
+                            </div>
+                        </div>
+                        <div class="donate__inner-item">
+                            <button type="submit" class="button secondary">
+                                Donate Now
+                                <span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Sprites
+    =========================================== -->
+    <!-- <svg>
+      <use xlink:href="#voice"></use>
+    </svg> -->
+    <svg style="display: none">
+        <symbol id="hand" viewBox="0 0 17.538 15.782">
+            <g>
+                <defs>
+                    <clipPath id="clip-path">
+                        <rect id="Rectangle_58" data-name="Rectangle 58" width="17.538" height="15.782"
+                            fill="currentColor" />
+                    </clipPath>
+                </defs>
+                <g id="Group_2214-2" data-name="Group 2214" clip-path="url(#clip-path)">
+                    <path id="Path_362" data-name="Path 362"
+                        d="M0,219.01a.563.563,0,0,1,.6-.357c.416.008.833,0,1.25,0a.8.8,0,0,0,.551-.189c.372-.312.753-.612,1.13-.916A3.651,3.651,0,0,1,5.9,216.7q2.363.005,4.726,0a1.115,1.115,0,0,1,.665.183.974.974,0,0,1,.389,1.085,1.01,1.01,0,0,1-.9.705c-.758.048-1.517.01-2.276.024-.091,0-.183,0-.274.009a.458.458,0,0,0-.407.453.463.463,0,0,0,.431.452c.291.012.582.007.873.007.907,0,1.815-.014,2.722,0a1.956,1.956,0,0,0,1.306-.465q1.212-.979,2.433-1.947a2.542,2.542,0,0,1,.6-.416.978.978,0,0,1,1.306.561c.014.037.028.075.042.112v.445a1.416,1.416,0,0,1-.513.687q-2.009,1.6-4.01,3.209a3.417,3.417,0,0,1-2.213.776q-4.991-.009-9.983,0A.8.8,0,0,1,0,222.127Z"
+                        transform="translate(0 -206.807)" fill="currentColor" />
+                    <path id="Path_363" data-name="Path 363"
+                        d="M96.561,2.579a3.872,3.872,0,0,1-.647,1.971,11.3,11.3,0,0,1-2.455,2.675,18.021,18.021,0,0,1-1.537,1.145.234.234,0,0,1-.3.018A15.141,15.141,0,0,1,87.981,5.1,4.814,4.814,0,0,1,87,3.033,2.6,2.6,0,0,1,88.9.055,2.163,2.163,0,0,1,90.639.4a3.48,3.48,0,0,1,1.03,1.038c.071.115.11.095.176,0A3.333,3.333,0,0,1,93.2.217a2.234,2.234,0,0,1,2.727.657,2.676,2.676,0,0,1,.63,1.7"
+                        transform="translate(-82.988 0)" fill="currentColor" />
+                </g>
+            </g>
+        </symbol>
+        <symbol id="search" viewBox="0 0 17.806 17.806">
+            <g id="Icon_feather-search" data-name="Icon feather-search" transform="translate(0.75 0.75)">
+                <path id="Path_14" data-name="Path 14"
+                    d="M18.718,11.609A7.109,7.109,0,1,1,11.609,4.5a7.109,7.109,0,0,1,7.109,7.109Z"
+                    transform="translate(-4.5 -4.5)" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" />
+                <path id="Path_15" data-name="Path 15" d="M28.841,28.841l-3.866-3.866"
+                    transform="translate(-12.845 -12.845)" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="1.5" />
+            </g>
+        </symbol>
+        <symbol id="closeIcon" viewBox="0 0 9.304 9.304">
+            <g id="Group_3232" data-name="Group 3232" transform="translate(-346.573 -22)">
+                <g id="Group_3219" data-name="Group 3219" transform="translate(346.573 22)">
+                    <path id="Path_3759" data-name="Path 3759"
+                        d="M11.639,1.012H.506A.508.508,0,0,1,0,.506H0A.508.508,0,0,1,.506,0H11.639a.508.508,0,0,1,.506.506h0A.508.508,0,0,1,11.639,1.012Z"
+                        transform="translate(0 8.588) rotate(-45)" fill="currentColor" />
+                    <path id="Path_4005" data-name="Path 4005"
+                        d="M11.639,1.012H.506A.508.508,0,0,1,0,.506H0A.508.508,0,0,1,.506,0H11.639a.508.508,0,0,1,.506.506h0A.508.508,0,0,1,11.639,1.012Z"
+                        transform="translate(0.716 0) rotate(45)" fill="currentColor" />
+                </g>
+            </g>
+        </symbol>
+    </svg>
+
+    <!-- js
+    =========================================== -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/numberVal.js"></script>
+
+</body>
+
+</html>
